@@ -1,10 +1,10 @@
 ARG TAG=latest
 FROM batfish/batfish:$TAG
 
-ARG ASSETS
-ARG PYBATFISH_VERSION
+#ARG ASSETS
+#ARG PYBATFISH_VERSION
 
-COPY ${ASSETS} ./
+#COPY ${ASSETS} ./
 #RUN chmod a+x wrapper.sh
 
 RUN apt-get update && apt-get install -y \
@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/* \
     && pip3 install --upgrade pip
 
-# Pybatfish + Jupyter
+# Pybatfish + Pynetbox 
 EXPOSE 8888
 RUN pip3 install pybatfish \
     pynetbox 
