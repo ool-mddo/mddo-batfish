@@ -17,5 +17,4 @@ RUN apt-get update && apt-get install -y \
 # Pybatfish + Pynetbox 
 EXPOSE 8888
 RUN pip3 install pybatfish \
-    python-netbox \
     pynetbox 
