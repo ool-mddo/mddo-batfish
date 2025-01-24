@@ -28,4 +28,4 @@ RUN pip install --upgrade pip
 # Pybatfish + Pynetbox 
 EXPOSE 8888
 RUN pip3 install pybatfish==2023.12.16.1270 \
-    pynetbox
+    pynetbox==7.4.1
