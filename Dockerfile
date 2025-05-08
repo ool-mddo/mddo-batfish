@@ -1,4 +1,4 @@
-ARG TAG=2023.12.16.1270
+ARG TAG=2024.07.10.1530
 FROM batfish/batfish:$TAG
 
 #ARG ASSETS
@@ -29,3 +29,4 @@ RUN pip install --upgrade pip
 EXPOSE 8888
 RUN pip3 install pybatfish==2023.12.16.1270 \
     pynetbox==7.4.1
+RUN pip3 install pandas setuptools
