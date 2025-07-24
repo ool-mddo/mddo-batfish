@@ -28,3 +28,4 @@ EXPOSE 8888
 RUN pip3 install pybatfish==2023.12.16.1270 \
     pynetbox==7.5.0
     #pynetbox==7.4.1
+RUN pip3 install pandas setuptools
